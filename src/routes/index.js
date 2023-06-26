@@ -1,9 +1,12 @@
 import { useUserContext } from "../context/useUserContext"
 import { Route, Routes, Navigate } from "react-router-dom"
 
+import LoginPage from "../pages/login"
+import Home from "../pages/home"
+import PerfilPage from "../pages/perfil"
 const MyRoutes = () => {
 
-    const {user} = useUserContext()    
+    // const {user} = useUserContext()    
 
     return (
         <Routes>
@@ -11,7 +14,7 @@ const MyRoutes = () => {
             <Route path= "/login" element = {user? <Home/> : <LoginPage/>}/>
             <Route path= "/registrar" element = {user? <Home/> : <Register/>}/>
             <Route path= "/match" element = {user? <MatchPage/> : <LoginPage/>}/>
-            <Route path= "/perfil" element = {user? <Perfil/>: <LoginPage/>}/>
+            <Route path= "/perfil" element = {user? <PerfilPage/>: <LoginPage/>}/>
             <Route path= "/admin" element={<AdminPage/>}/>
 
         </Routes>

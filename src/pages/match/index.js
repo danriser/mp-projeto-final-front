@@ -1,5 +1,4 @@
-
-const Home = ()=> {
+const MatchPage = ()=> {
     return(
         <Container>
 
@@ -7,4 +6,4 @@ const Home = ()=> {
     )
 
 }
-export default Home
+export default MatchPage
