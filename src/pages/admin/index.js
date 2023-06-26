@@ -1,6 +1,6 @@
 import { Container } from "./styles"
 
-const RegisterPage = ()=> {
+const AdminPage = ()=> {
     return(
         <Container>
 
@@ -8,4 +8,4 @@ const RegisterPage = ()=> {
     )
 
 }
-export default RegisterPage
+export default AdminPage

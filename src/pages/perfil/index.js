@@ -1,3 +1,5 @@
+import { Container } from "./styles"
+
 const PerfilPage = ()=> {
     return(
         <Container>
