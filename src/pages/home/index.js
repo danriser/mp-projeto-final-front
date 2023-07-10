@@ -21,10 +21,10 @@ const Home = ()=> {
                 </div> */}
 
                 {/* <span style = {{fontsize:'30px', cursor:'pointer'}} onclick={openMenu()}>&#9776;</span>  */}
-                <div className="profile"><a href="#" style={{color: "clrwhite"}}>Perfil</a></div>
+                <div className="profile"><a href="/perfil" style={{color: "clrwhite"}}>Perfil</a></div>
                 <div className="logo"><img src="logoooo.png.png"></img></div>
 
-                <div className="container">
+                <div className="group_container">
                     <div className="box">Grupos de Músicas</div>
                     <div className="box">Grupos de Jogos</div>
                     <div className="box">Grupos de Filmes</div>

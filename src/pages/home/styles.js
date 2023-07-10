@@ -60,7 +60,7 @@ body {
     color: var(--clr-white);
 }
 
-.container {
+.group_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
