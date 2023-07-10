@@ -35,8 +35,7 @@ const Home = ()=> {
 
             </body>
 
-        </Container>
-    )
 
-}
-export default Home
+
+</body>
+</html>
