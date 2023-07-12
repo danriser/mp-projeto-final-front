@@ -21,7 +21,7 @@ const UserProvider = ({children}) => {
                 api.defaults.headers.common["X-Admin-Token"] = response.data.authentication_token
                 api.defaults.headers.common["X-Admin-Email"] = response.data.email
                 setAdminOptions(true)
-                Cookie.set('struct.user', JSON.stringify(response.data), {expires: 1})
+                Cookie.set('match.user', JSON.stringify(response.data), {expires: 1})
                 Cookie.set('viewAdmin', JSON.stringify(true))
                 toast.success("Usuário logado com sucesso!")
                 navigate("/")
@@ -32,7 +32,7 @@ const UserProvider = ({children}) => {
         }
     }
     useEffect(() => {
-        const retrievedUser = Cookie.get('struct.user');
+        const retrievedUser = Cookie.get('match.user');
         if(retrievedUser){
             let parsedUser = JSON.parse(retrievedUser)
             setUser(parsedUser)

@@ -1,13 +1,15 @@
+import styled from "styled-components";
+export const Container = styled.div`
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-header: #06022c;
-    --clr-background: #21082c;
+    color: #06022c;
+    background-color: #21082c;
     --clr-white: #fff;
     --clr-gray: #d9d9d9;
     --clr-dark-gray: #71767b;
 
-    --ff-primary: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 * {
@@ -15,6 +17,10 @@
     padding: 0;
     box-sizing: border-box;
     font: inherit;
+}
+
+profile{
+    color:white;
 }
 
 body {
@@ -54,7 +60,7 @@ body {
     color: var(--clr-white);
 }
 
-.container {
+.group_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -67,7 +73,7 @@ body {
 .box {
     width: 200px;
     height: 200px;
-    background-color: var(--clr-dark-gray);
+    background-color: var(--dark-gray);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,3 +111,5 @@ body {
 #logo img {
     height: 150px;
 }
+
+`
